@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.container{
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 540px;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header button{
+    background: transparent;
+    cursor: pointer;
+    justify-self: flex-end;
+    border: 1px solid #ccc;
+    border-radius: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: 2%;
+}
+
+.header button:hover{
+    background-color: #c9d6ff;
+}
+
+.to-do-container h2{
+    margin-left: 4%;
+    display: flex;
+}
+
+.tasks-container{
+    overflow-y: scroll;
+    max-height: 450px;
+    border-radius: 5px;
+}
+
+.completed-tasks-container{
+    overflow-y: scroll;
+    max-height: 450px;
+    border-radius: 5px;
+}
+
+.task{
+    display: flex;
+    flex-direction: column; /* Changed from row to column */
+    align-items: flex-start; /* Align items to the start */
+    gap: 5px;
+    margin-right: 2%;
+}
+
+.task-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+
+.task-date{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.task-date p{
+    font-size: 12px;
+    margin-left: 8%;
+}
+
+.urgencia{
+    display: flex;
+    border: none;
+    background-color: #512da8;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    justify-content: center;
+    white-space: nowrap;
+    padding: 3px;
+    padding-right: 10px;
+    margin-left: auto;
+}
+
+
+.task button{
+    background: transparent;
+    cursor: pointer;
+    justify-self: flex-end;
+    border: 1px solid #ccc;
+    border-radius: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+    width: 30px;
+    height: 30px;
+}
+
+.task button:hover{
+    background-color: #c9d6ff;
+}
+
+.button-container{
+    display: flex;
+    gap: 5px;
+    margin-left: auto;
+}
+.separator{
+    border-top: 1px solid #bbb;
+    margin: 2%;
+}
+
+.task input{
+    margin-right: 10px;
+    margin-left: 2%;
+}
+
+.completed {
+    text-decoration: line-through; /* Adiciona um traço ao texto da tarefa */
+    opacity: 0.7; /* Pode diminuir a opacidade para indicar que está concluída */
+}
+
+.completed-tasks-details{
+    margin-left: 2%;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c9d6ff;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

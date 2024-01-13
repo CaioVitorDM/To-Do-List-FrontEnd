@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="create-task.css">
+    <title>Create Task</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>
+            Create a task
+        </h1>
+        <div class="separator"></div>
+
+        <div class="form-container">
+            <form id="taskForm">
+                <input type="text" placeholder="Task title" id="title">
+                <input type="date" placeholder="Due Date" id="due-date">
+                <select name="tasks-urgency" id="task-urgencia">
+                    <option value="">Choose an urgency level</option>
+                    <option value="Muito Urgente">Muito Urgente</option>
+                    <option value="Urgente">Urgente</option>
+                    <option value="Normal">Normal</option>
+                </select>
+                <button>Save Task</button>
+            </form>
+        </div>
+    </div>
+
+
+
+  <script src="create-task.js"></script>    
+</body>
+</html>
